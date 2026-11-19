@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishesha S — Software Developer</title>
+  <meta name="description" content="Portfolio of Vishesha S, Computer Science undergraduate building full-stack software with Java, React, Spring Boot, and Python.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vishesha S — Software Developer">
+  <meta property="og:description" content="Computer Science undergraduate at SKCET, Coimbatore. Full-stack applications with Java, React, and Spring Boot.">
+  <meta property="og:type" content="website">
+  <!-- TODO: Update og:url and og:image once deployed to GitHub Pages -->
+
+  <!-- Google Fonts: DM Serif Text (Regular + Italic) & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ─── Thin Scroll Progress Indicator ─── -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ─── Navigation ─── -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#" class="nav__name">Vishesha S</a>
+
+      <div class="nav__right">
+        <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line class="menu-line menu-line--top" x1="3" y1="6" x2="21" y2="6"/>
+            <line class="menu-line menu-line--mid" x1="3" y1="12" x2="21" y2="12"/>
+            <line class="menu-line menu-line--bot" x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+
+        <nav class="nav__links" id="nav-links" aria-label="Primary navigation">
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#skills" class="nav__link">Skills</a>
+          <a href="#education" class="nav__link">Education</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ─── Hero (Asymmetric 60/40 with Scale Contrast) ─── -->
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero__grid">
+        <div class="hero__primary">
+          <h1 class="hero__headline hero__reveal">
+            I build full-stack apps with <em>Java, React and Spring Boot.</em>
+          </h1>
+          <p class="hero__intro hero__reveal">
+            I’m a Computer Science undergraduate at Sri Krishna College of Engineering and Technology. Recently interned at TP Solar Ltd (A Tata Enterprise), contributing to enterprise IT systems and cybersecurity practices.
+          </p>
+          <div class="hero__actions hero__reveal">
+            <a href="#projects" class="btn btn--primary">View projects</a>
+            <a href="assets/Vishesha_S_Resume.pdf" class="btn btn--secondary" download="Vishesha_S_Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+          </div>
+        </div>
+
+        <aside class="hero__aside hero__reveal" aria-label="Quick facts">
+          <div class="fact-row">
+            <span class="fact-label">Studying</span>
+            <span class="fact-value">B.E. CSE, SKCET, 2024–2028</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">CGPA</span>
+            <span class="fact-value">8.10</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Based in</span>
+            <span class="fact-value">Tamil Nadu, India</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Working on</span>
+            <span class="fact-value">NeuroWeave, a multi-agent learning coach</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Works with</span>
+            <span class="fact-value">Java, React, Spring Boot, Python</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="container">
+        <!-- The signature brick-red rule -->
+        <hr class="hero__rule" aria-hidden="true">
+      </div>
+    </section>
+
+    <!-- ─── Experience (Hairline Timeline) ─── -->
+    <section id="experience" class="section">
+      <div class="container section__grid">
+        <div class="section__col-left">
+          <h2 class="section__heading">Experience</h2>
+        </div>
+        <div class="section__col-right">
+          <div class="timeline">
+            <article class="timeline__entry">
+              <div class="timeline__year">2026</div>
+              <div class="timeline__content">
+                <header class="timeline__header">
+                  <h3 class="timeline__title">IT Intern</h3>
+                  <p class="timeline__meta">TP Solar Ltd (A Tata Enterprise), IT Department &middot; May 2026</p>
+                </header>
+                <ul class="timeline__bullets">
+                  <li>Performed system monitoring and technical troubleshooting across enterprise IT systems.</li>
+                  <li>Collaborated with the IT team on cybersecurity practices and operational procedures.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Projects (Catalogue Entries) ─── -->
+    <section id="projects" class="section">
+      <div class="container section__grid">
+        <div class="section__col-left">
+          <h2 class="section__heading">Projects</h2>
+        </div>
+        <div class="section__col-right">
+          <div class="catalogue">
+            <article class="catalogue__item">
+              <h3 class="catalogue__title">Neighborhood Event Management System</h3>
+              <p class="catalogue__summary">
+                A community management platform coordinating multi-role permissions for neighborhood events.
+              </p>
+              <ul class="catalogue__bullets">
+                <li>Developed responsive React dashboards for four distinct user roles—Admin, Community Manager, Organizer, and Resident—with role-tailored interfaces and intuitive navigation.</li>
+                <li>Engineered Spring Boot REST APIs with JWT authentication and granular role-based access control, backed by MySQL.</li>
+                <li>Applied accessibility practices including semantic HTML, ARIA labels, keyboard navigation, and WCAG 2.2 color-contrast validation verified with Lighthouse.</li>
+              </ul>
+              <p class="catalogue__stack">React &middot; Spring Boot &middot; MySQL &middot; JWT &middot; Lighthouse</p>
+              <div class="catalogue__links">
+                <!-- TODO: Add live demo URL for Neighborhood Event Management System -->
+                <a href="#" class="catalogue__link text-link" target="_blank" rel="noopener noreferrer">Live ↗</a>
+                <!-- TODO: Add GitHub repository URL for Neighborhood Event Management System -->
+                <a href="https://github.com/Vishesha01" class="catalogue__link text-link" target="_blank" rel="noopener noreferrer">Code ↗</a>
+              </div>
+            </article>
+
+            <hr class="catalogue__divider" aria-hidden="true">
+
+            <article class="catalogue__item">
+              <h3 class="catalogue__title">NeuroWeave — Autonomous Education Coach</h3>
+              <p class="catalogue__summary">
+                An intelligent learning companion that analyzes retention patterns to deliver adaptive, individualized curriculum.
+              </p>
+              <ul class="catalogue__bullets">
+                <li>Built a multi-agent learning support system that models learner mastery, retention, and error patterns to dynamically personalize learning paths.</li>
+                <li>Implemented adaptive quizzes, knowledge-gap detection, explainable AI guidance, and fairness monitoring using lightweight ML heuristics.</li>
+              </ul>
+              <p class="catalogue__stack">Python &middot; FastAPI &middot; SQLite &middot; Scikit-learn &middot; NLP</p>
+              <div class="catalogue__links">
+                <!-- TODO: Add live demo URL for NeuroWeave -->
+                <a href="#" class="catalogue__link text-link" target="_blank" rel="noopener noreferrer">Live ↗</a>
+                <!-- TODO: Add GitHub repository URL for NeuroWeave -->
+                <a href="https://github.com/Vishesha01" class="catalogue__link text-link" target="_blank" rel="noopener noreferrer">Code ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Skills (Full-Width Deep Graphite Band) ─── -->
+    <section id="skills" class="section section--dark-band">
+      <div class="container section__grid">
+        <div class="section__col-left">
+          <h2 class="section__heading section__heading--light">Skills</h2>
+        </div>
+        <div class="section__col-right">
+          <div class="skills-grid">
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Languages</h3>
+              <p class="skills-cell__items">Java &middot; C++ &middot; Python</p>
+            </div>
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Frontend</h3>
+              <p class="skills-cell__items">React.js &middot; HTML5 &middot; CSS3 &middot; JavaScript &middot; Responsive Design &middot; Web Accessibility</p>
+            </div>
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Backend</h3>
+              <p class="skills-cell__items">Spring Boot &middot; FastAPI &middot; REST APIs</p>
+            </div>
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Databases &amp; Tools</h3>
+              <p class="skills-cell__items">MySQL &middot; SQLite &middot; Git &middot; Linux &middot; Windows</p>
+            </div>
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Core CS</h3>
+              <p class="skills-cell__items">Data Structures and Algorithms &middot; Object-Oriented Programming &middot; DBMS &middot; Operating Systems</p>
+            </div>
+            <div class="skills-cell">
+              <h3 class="skills-cell__title">Machine Learning</h3>
+              <p class="skills-cell__items">NumPy &middot; Pandas &middot; Scikit-learn &middot; NLP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Education (Hairline Timeline) ─── -->
+    <section id="education" class="section">
+      <div class="container section__grid">
+        <div class="section__col-left">
+          <h2 class="section__heading">Education</h2>
+        </div>
+        <div class="section__col-right">
+          <div class="timeline">
+            <article class="timeline__entry">
+              <div class="timeline__year">2024–28</div>
+              <div class="timeline__content">
+                <header class="timeline__header">
+                  <h3 class="timeline__title">B.E. Computer Science and Engineering</h3>
+                  <p class="timeline__meta">Sri Krishna College of Engineering and Technology, Coimbatore &middot; CGPA 8.10</p>
+                </header>
+                <p class="timeline__note">
+                  Relevant coursework: Data Structures and Algorithms, Object-Oriented Programming, DBMS, Operating Systems.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__entry">
+              <div class="timeline__year">2024</div>
+              <div class="timeline__content">
+                <header class="timeline__header">
+                  <h3 class="timeline__title">HSC (12th Grade)</h3>
+                  <p class="timeline__meta">Ignatius Convent Girls Higher Secondary School &middot; 91.33%</p>
+                </header>
+              </div>
+            </article>
+          </div>
+
+          <div class="certifications-block">
+            <h3 class="certifications-heading">Certifications</h3>
+            <ul class="certifications-list">
+              <li>Front-End Developer Specialization — LearnQuest</li>
+              <li>Software Engineering: Modeling Software Systems using UML — HKUST</li>
+              <li>Core Java — LearnQuest</li>
+              <li>Database Structures and Management using MySQL — Meta</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Contact (Bold Full-Width Brick Red Band) ─── -->
+    <section id="contact" class="section section--brick-band">
+      <div class="container section__grid">
+        <div class="section__col-left">
+          <h2 class="section__heading section__heading--brick">Contact</h2>
+        </div>
+        <div class="section__col-right">
+          <p class="contact__intro">
+            I’m actively looking for software developer internships starting 2027. If you have an opportunity or want to discuss a project, my inbox is open.
+          </p>
+
+          <div class="contact__email-wrapper">
+            <a href="mailto:vishesha771@gmail.com" class="contact__email">vishesha771@gmail.com</a>
+          </div>
+
+          <div class="contact__links">
+            <a href="https://github.com/Vishesha01" class="contact__link text-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/vishesha-s-187083330" class="contact__link text-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="assets/Vishesha_S_Resume.pdf" class="contact__link text-link" download="Vishesha_S_Resume.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Vishesha S</p>
+      <p class="footer__note">Built with plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
